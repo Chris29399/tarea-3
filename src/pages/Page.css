@@ -1,0 +1,356 @@
+.workspace-content {
+	--background: var(--ion-background-color);
+}
+
+.page-shell {
+	width: min(100% - 40px, 880px);
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 42px 0 64px;
+}
+
+.page-heading {
+	margin: 0 0 28px;
+}
+
+.page-number,
+.section-kicker,
+.sheet-index,
+.result-panel > span {
+	color: var(--ion-color-medium);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+}
+
+.page-heading h1 {
+	margin: 8px 0 0;
+	color: var(--ion-text-color);
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+.toolbar-icon {
+	margin-left: 6px;
+	color: var(--ion-color-primary);
+	font-size: 21px;
+}
+
+.profile-sheet,
+.tool-panel,
+.experience-panel {
+	--background: var(--ion-card-background, var(--ion-item-background, var(--ion-background-color)));
+	border: 1px solid var(--ion-color-step-150);
+	border-radius: 8px;
+}
+
+.profile-layout {
+	position: relative;
+	display: grid;
+	grid-template-columns: 184px minmax(0, 1fr);
+	gap: 30px;
+	align-items: center;
+	min-height: 310px;
+	padding: 38px;
+}
+
+.profile-header {
+	padding: 0 0 12px;
+}
+
+.profile-header ion-card-subtitle {
+	color: var(--ion-color-medium);
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.profile-header ion-card-title {
+	margin-top: 6px;
+	color: var(--ion-text-color);
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 25px;
+}
+
+.profile-data {
+	padding: 0;
+	background: transparent;
+}
+
+.profile-data ion-item {
+	--background: transparent;
+	--border-color: var(--ion-color-step-150);
+	--color: var(--ion-text-color);
+	--inner-padding-end: 0;
+	--padding-start: 0;
+}
+
+.profile-data ion-label {
+	color: var(--ion-color-medium);
+	font-size: 13px;
+}
+
+.profile-data ion-text {
+	font-size: 14px;
+}
+
+.profile-data ion-icon {
+	color: var(--ion-color-primary);
+}
+
+.photo-placeholder {
+	display: flex;
+	width: 160px;
+	aspect-ratio: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	border: 1px dashed var(--ion-color-step-400);
+	background: var(--ion-color-step-100);
+	color: var(--ion-color-medium);
+}
+
+.photo-placeholder ion-icon {
+	font-size: 46px;
+}
+
+.photo-placeholder span {
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+}
+
+.profile-details h2 {
+	margin: 5px 0 20px;
+	color: var(--ion-text-color);
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 25px;
+}
+
+.sheet-index {
+	position: absolute;
+	right: 38px;
+	bottom: 21px;
+	left: 38px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 12px;
+	border-top: 1px solid var(--ion-color-step-150);
+	font-size: 9px;
+}
+
+.tool-panel,
+.experience-panel {
+	max-width: 640px;
+}
+
+.tool-panel form {
+	display: grid;
+	gap: 22px;
+}
+
+.input-pair {
+	width: 100%;
+	padding: 0;
+}
+
+.input-pair ion-row {
+	align-items: center;
+}
+
+.input-pair ion-col {
+	padding: 6px;
+}
+
+.number-input {
+	--background: var(--ion-item-background, var(--ion-background-color));
+	--border-color: var(--ion-color-step-250);
+	--border-radius: 4px;
+	--border-style: solid;
+	--border-width: 1px;
+	--color: var(--ion-text-color);
+	--highlight-color-focused: var(--ion-color-primary);
+	--padding-start: 13px;
+	--padding-end: 13px;
+	min-height: 68px;
+}
+
+.number-input::part(label) {
+	color: var(--ion-color-medium);
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.number-input::part(native) {
+	font-size: 16px;
+}
+
+.operator-sign {
+	color: var(--ion-color-primary);
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.action-button {
+	--background: var(--ion-color-primary);
+	--background-hover: var(--ion-color-primary-shade);
+	--border-radius: 4px;
+	--box-shadow: none;
+	--color: var(--ion-color-primary-contrast);
+	min-height: 46px;
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.result-panel {
+	--background: var(--ion-color-step-100);
+	--border-color: var(--ion-color-step-200);
+	--color: var(--ion-text-color);
+	--padding-start: 18px;
+	--inner-padding-end: 18px;
+	min-height: 96px;
+	margin-top: 26px;
+	border-left: 3px solid var(--ion-color-primary);
+}
+
+.result-panel ion-card-subtitle {
+	margin-bottom: 6px;
+	color: var(--ion-color-medium);
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.result-value {
+	display: block;
+	color: var(--ion-text-color);
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 32px;
+	line-height: 1.2;
+	overflow-wrap: anywhere;
+}
+
+.word-result .result-value {
+	text-transform: capitalize;
+}
+
+.form-error {
+	display: block;
+	margin: 13px 0 0 4px;
+	font-size: 13px;
+}
+
+.multiplication-table {
+	--background: transparent;
+	margin-top: 24px;
+}
+
+.multiplication-table ion-item {
+	--background: transparent;
+	--border-color: var(--ion-color-step-150);
+	--color: var(--ion-text-color);
+}
+
+.experience-panel {
+	max-width: 760px;
+}
+
+.video-frame {
+	display: grid;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	place-items: center;
+	overflow: hidden;
+	background: var(--ion-color-step-100);
+}
+
+.video-frame iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.video-placeholder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	color: var(--ion-text-color);
+}
+
+.video-placeholder ion-icon {
+	color: var(--ion-color-primary);
+	font-size: 42px;
+}
+
+.video-placeholder span {
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+}
+
+.video-form {
+	width: 100%;
+	margin-top: 16px;
+	padding: 0;
+}
+
+.video-form ion-row {
+	align-items: end;
+}
+
+.video-form ion-col {
+	padding: 6px;
+}
+
+.video-form .action-button {
+	width: 100%;
+}
+
+@media (max-width: 600px) {
+	.page-shell {
+		width: min(100% - 28px, 880px);
+		padding-top: 28px;
+	}
+
+	.page-heading {
+		margin-bottom: 20px;
+	}
+
+	.page-heading h1 {
+		font-size: 30px;
+	}
+
+	.profile-layout {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		gap: 22px;
+		padding: 24px 18px 62px;
+	}
+
+	.photo-placeholder {
+		width: min(46vw, 160px);
+	}
+
+	.profile-details {
+		width: 100%;
+	}
+
+	.profile-header {
+		text-align: center;
+	}
+
+	.sheet-index {
+		right: 20px;
+		left: 20px;
+	}
+
+	.operator-column {
+		display: none;
+	}
+}
