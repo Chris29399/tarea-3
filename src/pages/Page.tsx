@@ -82,6 +82,10 @@ const ProfilePage: React.FC = () => (
             <IonText>Linares Peguero</IonText>
           </IonItem>
           <IonItem>
+            <IonLabel position="stacked">Matricula</IonLabel>
+            <IonText>2018-7017</IonText>
+          </IonItem>
+          <IonItem>
             <IonLabel position="stacked">Correo electrónico</IonLabel>
             <IonText>ctlp29399@gmail.com</IonText>
           </IonItem>
@@ -217,7 +221,7 @@ const getYoutubeVideoId = (value: string): string | null => {
   }
 };
 
-const youtubeExperienceUrl = '';
+const youtubeExperienceUrl = 'https://youtu.be/Tyj1pFP6JXE?si=ztI6R-HiwRbWVdZH';
 
 const ExperiencePage: React.FC = () => {
   const videoId = getYoutubeVideoId(youtubeExperienceUrl);
